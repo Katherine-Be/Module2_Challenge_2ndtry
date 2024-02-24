@@ -1,5 +1,10 @@
 /*page styling*/
-body  {
+
+* {
+    padding: 0;
+  }
+
+body * /*Readme>Resources>Flex all elements*/{
     font-family: 'Times New Roman', Times, serif  ;
     font-size: 16px;
     display:flex;
@@ -7,16 +12,27 @@ body  {
     align-items: center;
 }
 
-header {
-    font-size: 175%;
+header h1 {
+    font-size: 250%;
 }
 
 nav {
     font-size:150%;
 }
 
-nav ul * {
+/*remove bullets/link color/underline*/
+ul * {
     list-style: none;
     text-decoration: none;
     color: black;
 }
+
+main section a {
+    font-size: 185%;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+
+
+
