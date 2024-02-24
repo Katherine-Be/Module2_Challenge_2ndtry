@@ -2,6 +2,7 @@
 * {
     padding: 0;
   }
+  
 
 /*Readme>Resources>Flex all elements*/
 body * {
@@ -10,6 +11,11 @@ body * {
     display:flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*Readme>Resources>Gradient Background*/
+body {
+    background: linear-gradient(rgb(106, 106, 206), rgb(238, 147, 162));
 }
 
 header h1 {
@@ -33,12 +39,27 @@ main section a {
     text-decoration: underline; 
 }
 
+article {
+    flex-direction:row;
+    margin: revert-layer;
+}
+
+figure {
+    border: 30px solid aliceblue;
+    border-radius: 10%;  
+}
+
+figure:hover {
+    box-shadow: 20px 20px 20px grey;
+    zoom: 1.05;
+}
 
 [class~="project"] img {
     height: 300px;
     width: 300px;
     object-fit: cover; /*see Object Fit reference in readme.md*/
     object-position: 20% 0;
+    border-radius:5%; 
 }
 
 /*first application's image larger in size than the others*/
@@ -46,8 +67,10 @@ main section a {
     height: 500px;
     width: 500px;
     object-fit: cover; /*see Object Fit reference in readme.md*/
-    object-position: 20% 0;
+    object-position: 0 0;
+    border-radius:5%; 
 }
+
 
 
 
