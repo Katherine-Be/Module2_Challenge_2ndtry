@@ -18,8 +18,23 @@ body {
     background: linear-gradient(rgb(106, 106, 206), rgb(238, 147, 162));
 }
 
+header {
+    background-color: rgb(151, 135, 135);
+    border-radius: 10% 10% 0 0;
+    margin: 0 2% 0 2%;
+    height: 350px;
+    box-shadow: 50px 50px 50px rgb(97, 97, 97);
+}
+
 header h1 {
     font-size: 250%;
+}
+
+nav {
+    border-radius: 0 0 10% 10%;
+    margin: 0 2% 0 2%;
+    background-color: beige;
+    box-shadow: 50px 50px 50px rgb(97, 97, 97);
 }
 
 nav * {
@@ -33,6 +48,11 @@ nav * {
     color: black;
 }
 
+
+section {
+    margin: 100px 100px;
+}
+
 main section a {
     font-size: 185%;
     font-weight: bold;
@@ -41,16 +61,21 @@ main section a {
 
 article {
     flex-direction:row;
-    margin: revert-layer;
 }
 
 figure {
     border: 30px solid aliceblue;
     border-radius: 10%;  
+    position: relative; /*Readme>Resources>FigCaption*/
+    max-width: 300px;
+}
+
+figure:first-child {
+    max-width: 500px;
 }
 
 figure:hover {
-    box-shadow: 20px 20px 20px grey;
+    box-shadow: 20px 20px 20px rgb(97, 97, 97);
     zoom: 1.05;
 }
 
@@ -68,10 +93,24 @@ figure:hover {
     width: 500px;
     object-fit: cover; /*see Object Fit reference in readme.md*/
     object-position: 0 0;
-    border-radius:5%; 
+    border-radius:10%; 
 }
 
+figcaption {
+    font-size: 185%;
+    position: absolute; /*Readme>Resources>FigCaption*/
+    top: 10px; /* Adjust as needed */
+    background-color: rgba(252, 249, 249, 0.5); /* Add a background color for better readability */
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5%;
+}
 
+h2 {
+    font-size: 100%;
+    text-align: justify;
+}
 
 
 
