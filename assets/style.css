@@ -16,16 +16,17 @@ header h1 {
     font-size: 250%;
 }
 
-nav {
-    font-size:150%;
-}
-
-/*remove bullets/link color/underline*/
-ul * {
-    list-style: none;
+nav * {
+    font-size:120%;
+    display: inline; /*list items in a row*/
+    margin-right: 20px;
+    align-self: flex-end; /*right-align list still inline*/
+    margin-right: 20px;
+    list-style: none; /*remove bullets/link color/underline*/
     text-decoration: none;
     color: black;
 }
+
 
 main section a {
     font-size: 185%;
