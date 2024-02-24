@@ -1,10 +1,10 @@
 /*page styling*/
-
 * {
     padding: 0;
   }
 
-body * /*Readme>Resources>Flex all elements*/{
+/*Readme>Resources>Flex all elements*/
+body * {
     font-family: 'Times New Roman', Times, serif  ;
     font-size: 16px;
     display:flex;
@@ -27,11 +27,26 @@ nav * {
     color: black;
 }
 
-
 main section a {
     font-size: 185%;
     font-weight: bold;
     text-decoration: underline; 
+}
+
+
+[class~="project"] img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover; /*see Object Fit reference in readme.md*/
+    object-position: 20% 0;
+}
+
+/*first application's image larger in size than the others*/
+.project1 img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover; /*see Object Fit reference in readme.md*/
+    object-position: 20% 0;
 }
 
 
