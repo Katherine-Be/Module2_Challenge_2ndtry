@@ -16,14 +16,16 @@ body * {
 
 /*Readme>Resources>Gradient Background*/
 body {
-    background: linear-gradient(rgb(106, 106, 206), rgb(238, 147, 162));
+    background: linear-gradient(0.25turn, #5b8bb6, #1e1a47);
 }
 
 nav {
-    display: absolute;
-    background-color: beige;
-    height: 20%;
+    background-color:#cb9b32;
+    height: 10%;
     box-shadow: 50px 20px 50px rgb(97, 97, 97);
+    height: 70px;
+    position: sticky;
+    top: 0; 
 }
 
 nav * {
@@ -37,11 +39,11 @@ nav * {
 }
 
 header {
-    background-color: rgb(151, 135, 135);
+    background-color: #834913;
     border-radius: 10% 10% 0 0;
     margin: 50px 2% 0 2%;
     height: 350px;
-    box-shadow: 50px 20px 50px rgb(97, 97, 97);
+    box-shadow: 50px 20px 50px #cb9b32;
 }
 
 header h1 {
@@ -119,5 +121,12 @@ figure h2 {
     padding: 10px 5px 10px 5px;
 }
 
+figure h2 a {
+    text-decoration: none;
+    font-size: 110%;
+    display: contents;
+    }
 
-
+ul li a {
+    font-size: 110%;
+}
