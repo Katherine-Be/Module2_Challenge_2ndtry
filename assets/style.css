@@ -24,7 +24,6 @@ nav {
     height: 10%;
     box-shadow: 50px 20px 50px rgb(97, 97, 97);
     height: 70px;
-    position: sticky;
     top: 0; 
 }
 
@@ -127,6 +126,6 @@ figure h2 a {
     display: contents;
     }
 
-ul li a {
-    font-size: 110%;
+section ul li {
+    font-size: 120%;
 }
