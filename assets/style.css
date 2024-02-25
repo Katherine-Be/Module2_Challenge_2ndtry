@@ -1,6 +1,7 @@
 /*page styling*/
 * {
     padding: 0;
+    margin: 0 0;
   }
   
 
@@ -18,23 +19,11 @@ body {
     background: linear-gradient(rgb(106, 106, 206), rgb(238, 147, 162));
 }
 
-header {
-    background-color: rgb(151, 135, 135);
-    border-radius: 10% 10% 0 0;
-    margin: 0 2% 0 2%;
-    height: 350px;
-    box-shadow: 50px 50px 50px rgb(97, 97, 97);
-}
-
-header h1 {
-    font-size: 250%;
-}
-
 nav {
-    border-radius: 0 0 10% 10%;
-    margin: 0 2% 0 2%;
+    display: absolute;
     background-color: beige;
-    box-shadow: 50px 50px 50px rgb(97, 97, 97);
+    height: 20%;
+    box-shadow: 50px 20px 50px rgb(97, 97, 97);
 }
 
 nav * {
@@ -42,15 +31,29 @@ nav * {
     display: inline; /*list items in a row*/
     margin-right: 20px;
     align-self: flex-end; /*right-align list still inline*/
-    margin-right: 20px;
     list-style: none; /*remove bullets/link color/underline*/
     text-decoration: none;
     color: black;
 }
 
+header {
+    background-color: rgb(151, 135, 135);
+    border-radius: 10% 10% 0 0;
+    margin: 50px 2% 0 2%;
+    height: 350px;
+    box-shadow: 50px 20px 50px rgb(97, 97, 97);
+}
+
+header h1 {
+    font-size: 250%;
+}
 
 section {
     margin: 100px 100px;
+}
+
+main h2 {
+    font-size: 125%;
 }
 
 main section a {
@@ -61,6 +64,8 @@ main section a {
 
 article {
     flex-direction:row;
+    justify-content: center;
+
 }
 
 figure {
@@ -68,6 +73,7 @@ figure {
     border-radius: 10%;  
     position: relative; /*Readme>Resources>FigCaption*/
     max-width: 300px;
+    margin: 2%
 }
 
 figure:first-child {
@@ -84,7 +90,7 @@ figure:hover {
     width: 300px;
     object-fit: cover; /*see Object Fit reference in readme.md*/
     object-position: 20% 0;
-    border-radius:5%; 
+    border-radius:10%; 
 }
 
 /*first application's image larger in size than the others*/
@@ -107,9 +113,10 @@ figcaption {
     border-radius: 5%;
 }
 
-h2 {
-    font-size: 100%;
+figure h2 {
+    font-size: 110%;
     text-align: justify;
+    padding: 10px 5px 10px 5px;
 }
 
 
